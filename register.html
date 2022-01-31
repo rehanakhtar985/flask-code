@@ -1,0 +1,119 @@
+<html>
+
+
+<link rel="icon" type="image/x-icon" href="{{url_for('static',filename = 'picture/logo6.png')}}">
+<link rel="stylesheet" href="register.css">
+
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/register.css') }}">
+
+<title>Doctor </title>
+
+<head>
+<style>
+}
+</style>
+
+
+</head>
+
+<body class="background">
+
+<div class="header" id="myHeader">
+
+<ul class="navigation" >
+ <img src="{{url_for('static',filename = 'picture/logo3.png')}}" alt="logo" width="226px" height="47px" > </img>  
+ 
+ 
+
+ 
+ <li> <a href="/register"><b>Register  </b> </a></li> 
+<li> <a href="/login"> <b>Login </b> </a></li>
+<li> <a href="#links" > <b>Contact </b></a></li>
+<li> <a href="#frequently" > <b>Frequently Searched  </b></a></li>
+<li> <a href="#yourdoctor" > <b>Your Doctor </b></a></li>
+<li> <a href="/" > <b>HOME</b></a></li>
+
+</ul>
+
+</div>
+
+
+<div  class="div" style="background-image: url({{ url_for('static',filename = '/picture/landscape.jfif')}});">
+  <p id="register">Register </p>
+<form style="line-height:3em;" >
+  <label for="fname">First name</label>
+  <input type="text" id="fname" name="fname" placeholder="Rehan"  value="" size="25"> 
+  <label for="lname">Last name</label> 
+  <input type="text" id="lname" name="lname" placeholder="Akhtar" value="" size="30"> <br>
+    <label for="fname">Mobile Number </label>
+  <input type="tel" id="fname" name="fname" placeholder="0314-5582717" value=""> 
+  
+   <label for="fname">Date Of Birth </label>
+  <input type="date" id="fname" name="fname" placeholder="24/01/2003 value="" size="35"> <br>
+  
+  <label for="lname">Email Adress </label> 
+  <input type="email" id="lname" name="lname" placeholder="abcd@gmail.com value="" size="68"> <br>
+  
+
+    <label for="fname">Password </label>
+  <input type="text" id="fname" name="fname" placeholder="password" value="" size="72"> <br>
+  
+  <label for="lname">Re-enter Password </label> 
+  <input type="text" id="lname" name="lname" placeholder="password" value="" size="64"> <br>
+  
+  
+    <label for="lname">Gender </label> 
+  <input type="checkbox" id="lname" name="lname" value="" size="31">
+  <label for="lname">Male </label> 
+   <input type="checkbox" id="lname" name="lname" value="" size="31">  
+    <label for="lname">Female </label> 
+  <input type="checkbox" id="lname" name="lname" value="" size="31"> 
+   <label for="lname">Coustom </label> <br>
+ 
+  
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> By creating this account, you agree to our Privacy Policy & Cookie Policy.</label><br><br>
+  
+  <input type="submit" onclick=(call())></input>
+  
+  
+  
+  
+</form>
+
+
+</div>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<script>
+
+  function call()
+  {
+  
+  window.alert("Congragulations! You Registerd Sucessfully ");
+  
+  }
+  
+  </script>
+
+</body>
+
+</html>

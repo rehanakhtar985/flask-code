@@ -1,0 +1,179 @@
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="{{url_for('static',filename = 'picture/logo6.png')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="mystyle.css">
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/home.css') }}">
+
+
+
+<title>Doctor </title>
+<style>
+
+
+</style>
+<meta name="viewport" content="width-device-width" ,initial-scale=1.0">
+</head>
+
+<body style="background-color:#F5FCFF;">
+
+<div class="header" id="myHeader">
+
+<ul class="navigation" >
+ <img src="{{url_for('static',filename = 'picture/logo3.png')}}" alt="logo" width="226px" height="47px" > </img>  
+ 
+ <li> <a href="/register"><b>Register  </b> </a></li> 
+<li> <a href="/login"> <b>Login </b> </a></li>
+<li> <a href="#links" > <b>Contact </b></a></li>
+<li> <a href="#frequently" > <b>Frequently Searched  </b></a></li>
+<li> <a href="#yourdoctor" > <b>Your Doctor </b></a></li>
+<li> <a href="/" > <b>HOME</b></a></li>
+
+</ul>
+
+</div>
+
+ <!-- <div class="content"> -->
+<div id="home">
+<div  class="div" style="background-image: url({{ url_for('static',filename = '/picture/landscape.jfif')}});">
+
+<form action="/action_page.php" class="search">
+
+  <label for="SEARCH:"> <b>Search:</b> </label><br>
+  <input type="text" id="SEARCH" name="SEARCH" size="100" ><br>
+  
+  </form>
+</div>
+</div>
+<hr>
+<p id="yourdoctor" class="your_doctor"> YOUR DOCTOR </p>
+<hr>
+
+<div id="frequently">
+
+<p style="color:blue;font-size:20px;"> <b>Frequently Visited Doctors </b></p>   
+<div class="gallery">
+<img src="{{url_for('static',filename = 'picture/pic3.jfif')}}" alt="doctor data "></img>
+<div class="desc" > I AM A DOCTOR.My name is Rehan Akhtar.and I am a web developer </div>
+</div>
+
+<div class="gallery">
+<img src="{{url_for('static',filename = 'picture/pic4.jfif')}}" alt="doctor data " height="195px"></img>
+<div class="desc" > I AM A DOCTOR.My name is Mick Kelvin.and I am a web developer </div>
+</div>
+
+<div class="gallery">
+<img src="{{url_for('static',filename = 'picture/pic3.jfif')}}"alt="doctor data "></img>
+<div class="desc" > I AM A DOCTOR.My name is  Mick Kelvin.and I am a web developer </div>
+</div>
+
+
+<div class="gallery">
+<img src="{{url_for('static',filename = 'picture/pic4.jfif')}}" alt="doctor data" height="195px"></img>
+<div class="desc" > I AM A DOCTOR.My name is  Mick Kelvin and I am a web developer </div>
+</div>
+
+<div class="gallery">
+<img src="{{url_for('static',filename = 'picture/pic3.jfif')}}"alt="doctor data "></img>
+<div class="desc" > I AM A DOCTOR.My name is  Mick Kelvin.and I am a web developer </div>
+</div>
+
+<p>rehan is develepor </p>
+
+</div>
+
+<div id="rehan">
+
+
+
+  
+  <div class="row">
+  <div class="column" >
+    <h2 style="color:blue ">Services</h2>
+    <p>
+	<div class="fottermenu" >
+ <a href="#home" style="color:black;"> HOME</a> <br>
+ <a href="#yourdoctor" style="color:black;"> Your Doctor </a> <br>
+  <a href="#links" style="color:black;" > Contact </a> <br>
+   <a href="login.html " style="color:black;" > Login   </a> <br>
+ <a href="user.html" style="color:black;" > Register </a> <br>
+
+</div> </p>
+  </div>
+  <div class="column" >
+    <h2 style="color:blue ">Your Doctor </h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" >
+    <h2 style="color:blue">News & Events </h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" >
+    <h2></h2>
+    <p>
+	<div id="links">
+	
+<a  href="https://www.facebook.com/rehan.akhtar.9887"> <i class="fa fa-facebook-official w3-hover-opacity"  style="font-size:28px;color:blue" ></i>   <a/> 
+<a href="https://www.instagram.com/itzmalikrehan/"> <i class="fa fa-instagram w3-hover-opacity" style="font-size:28px;color:blue" ></i> </a> 
+<a href="https://www.snapchat.com/add/r_akhtar3636"> <i class="fa fa-snapchat w3-hover-opacity" style="font-size:28px;color:blue" ></i> </a> 
+<a href="https://twitter.com/Rehanakhtar985">  <i class="fa fa-twitter w3-hover-opacity" style="font-size:28px;color:blue" ></i> </a>
+<a href="https://www.linkedin.com/in/malik-rehan-akhtar-7070011b5/">   <i class="fa fa-linkedin w3-hover-opacity" style="font-size:28px;color:blue" ></i> </a>
+<a href="https://www.youtube.com/c/MalikRehanAkhtar">   <i class="fa fa-youtube w3-hover-opacity" style="font-size:28px;color:blue"></i> </a> 
+	
+</div>
+	</p>
+	<br><br>
+	 <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right" style="font-size:28px;color:blue" ></i> Islamabad , Pakistan </p>
+  <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right" style="font-size:28px;color:blue" ></i> Phone: +92 314 558 2717</p>
+   <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right" style="font-size:28px;color:blue" > </i> Email: rehan.akhtar.985@gmail.com</p>
+   
+<!--	<img src="map.jfif" alt="location " width="239px" height="211px" style="float:right;margin-top:5px;"> </img>  -->
+	
+	
+  </div>
+<!--  <br> <br> <br><br>
+  <img src="map.jfif" alt="location " width="239px" height="211px" style="float:left; margin-top:5px;"> </img> -->
+  
+  
+
+  
+</div>
+
+	
+  
+</div>
+
+</div>
+
+<div style="color:blue;background-color:#63C5DA;padding:5px;text-align:center;">
+
+<hr>
+<p> <b>Copyrights @ 2022 - All Rights Reserved </b> </p>
+
+</div>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+</body>
+
+
+</html>

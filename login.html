@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<link rel="icon" type="image/x-icon" href="{{url_for('static',filename = 'picture/logo6.png')}}">
+<title> Doctor </title>
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/login.css') }}">
+
+
+<style>
+
+
+</style>
+</head>
+
+
+
+
+<body style="background-color:#F5FCFF;">
+
+<div class="header" id="myHeader">
+
+<ul class="navigation" >
+ <img src="{{url_for('static',filename = 'picture/logo3.png')}}" alt="logo" width="226px" height="47px" > </img>  
+ 
+ <li> <a href="/register"><b>Register  </b> </a></li> 
+<li> <a href="/login"> <b>Login </b> </a></li>
+<li> <a href="#links" > <b>Contact </b></a></li>
+<li> <a href="#frequently" > <b>Frequently Searched  </b></a></li>
+<li> <a href="#yourdoctor" > <b>Your Doctor </b></a></li>
+<li> <a href="/" > <b>HOME</b></a></li>
+
+</ul>
+
+</div>
+
+<div  class="div" style="background-image: url({{ url_for('static',filename = '/picture/landscape.jfif')}});">
+
+ <p id="register">Login</p>
+<form method="post" action="/login_validation" style="line-height:3em;" >
+  <label for="fname">Email Id </label>
+  <input type="email" id="fname" name="email" placeholder="abc@gmail.com"  value="" size="25"> <br>
+  <label for="lname">Password </label> 
+  <input type="password" id="lname" name="password" placeholder="password" value="" size="30"> <br>
+ <input type="submit" onclick="Press OK to submit "></input> <br>
+ <input type="reset" ></input>
+  
+  
+  
+  
+</form>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+
+</html>

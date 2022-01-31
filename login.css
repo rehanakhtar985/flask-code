@@ -1,0 +1,85 @@
+
+.navigation {
+    list-style-type:none;
+    margin : 0px ;
+    background-color : #63C5DA;
+    
+    padding-top:5px;
+    
+    
+    }
+    
+    li {
+    float:right;
+    
+    color:#3944BC;
+    display: inline-block;
+    padding:40px;
+    padding-top:10px;
+    padding-bottom:5px;
+    border:1px solid powder blue;
+    background-color : #63C5DA;
+    }
+    
+    li:hover{
+    border:2px solid #4682B4 ;
+    }
+    
+    
+    a{
+    text-decoration:none;
+    }
+    
+     .div{
+    padding: 150px;
+    padding-left:400px;
+    padding-top:15px;
+    height:450px;
+    margin-top:15px;
+    margin-left:0px;
+    background-size:100% 100%;
+    
+    }
+    #register {
+    
+    margin-left:190px;
+    font-size:28px;
+    }
+    
+    input[type=password], select {
+      width: 30%;
+      padding: 12px 20px;
+      margin: 8px 19px;
+      }
+      
+      input[type=email], select {
+      width: 30%;
+      padding: 12px 20px;
+      margin: 8px 19px;
+      }
+    
+    
+      input[type=submit] {
+      width: 20%;
+      background-color: #63C5DA;
+      color: black;
+      padding: 14px 20px;
+      margin-left:30px;
+      margin: 8px 120;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    
+    input[type=reset] {
+      width: 20%;
+      background-color: #63C5DA;
+      color: black;
+      padding: 14px 20px;
+      margin-left:30px;
+      margin: 8px 120;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
