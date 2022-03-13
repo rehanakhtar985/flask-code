@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.secret_key=os.urandom(24)
 
 
-connection=mysql.connector.connect(host="localhost",user="rehan",password="letmein1",database="login",port="3306",auth_plugin='mysql_native_password' )
+connection=mysql.connector.connect(host="",user="",password="",database="",port="3306",auth_plugin='mysql_native_password' )
 mycursor=connection.cursor()
 
 @app.route("/home")
